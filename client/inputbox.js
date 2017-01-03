@@ -1,13 +1,18 @@
 Template.footer.events({
-  'keypress input': function(event) {
+    'keypress input': function (event) {
+        var inputText = $('.input-box_text').val();
+        if (!inputText) return;
         if (event.which == 13) {
             event.stopPropagation();
-            $('.message-history').append('<div class="message"><a href="" class="message_profile-pic"></a><a href="" class="message_username">party_parrot</a><span class="message_timestamp">1:31 AM</span><span class="message_content">' + $('.input-box_text').val() + '</span></div>');
+            Meteor.call('newMessage', { text: $('.input-box_text').val() });
             $('.input-box_text').val("");
-
-            var history = document.getElementById("message-history");
-            history.scrollTop = history.scrollHeight;
+            setTimeout(scrollToBot, 50)
             return;
         }
     }
 });
+
+function scrollToBot() {
+    var messageHistory = document.getElementById("message-history");
+    messageHistory.scrollTop = messageHistory.scrollHeight;
+}

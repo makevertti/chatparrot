@@ -21,7 +21,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding-top: 53px;
+  padding-top: 52px;
   padding-bottom: 64px;
 }
 
@@ -46,12 +46,12 @@ body {
 }
 
 .title {
+  text-align: center;
   position: relative;
   width: 220px;
-  height: 53px;
-  line-height: 53px;
+  height: 52px;
+  line-height: 52px;
   font-weight: 900;
-  padding: 0 1rem;
   color: #ffffff;
   background: #2c2c2c;
   float: left;
@@ -63,7 +63,7 @@ body {
 
 .channel-menu_name {
   display: inline-block;
-  padding: 0 .5rem 0 1.5rem;
+  padding: 0 0 0 2rem;
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 900;
@@ -72,7 +72,6 @@ body {
 
 .channel-menu_prefix {
   color: #9e9ea6;
-  padding-right: .1rem;
   font-weight: 500;
 }
 
@@ -87,22 +86,22 @@ body {
 }
 
 .message-history {
+  height: 100%;
   margin-left: 220px;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 100%;
   padding: 0 18px 1rem 1.5rem;
 }
 
 .listings_channels {
-  margin: 1rem 0 2rem;
+  margin: 5rem 0 2rem;
 }
 
 .listings_header {
-  text-align: left;
-  font-size: .8rem;
-  line-height: 1.25rem;
-  margin: 0 1rem .1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0 1rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #ab9ba9;
@@ -124,7 +123,7 @@ body {
   line-height: 14px;
   float: right;
   margin-right: 3px;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .channel.active {
@@ -133,7 +132,7 @@ body {
 
 .message {
   position: relative;
-  padding: .25rem 5rem .1rem 2.5rem;
+  padding: .25rem 5rem .2rem 2.5rem;
 }
 
 .message_profile-pic {
@@ -159,33 +158,41 @@ body {
 .message_content {
   color: #000000;
   display: block;
+    padding: 0 0 0 0.5rem;
 }
 
 .user-menu {
+  z-index: 1;
   width: 220px;
   cursor: pointer;
-  background: #2c2c2c;
-  padding: 14px 0 9px 8px;
-  height: 4rem;
+  background: #006602;
+  height: 2.5rem;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  cursor: default;
 }
 
 .user-menu_profile-pic {
-  display: inline-block;
   float: left;
   width: 32px;
   height: 32px;
+  margin-left: 6px;
+  margin-top: 2px;
   background-image: url("http://cultofthepartyparrot.com/parrots/parrot.gif");
   background-size: cover;
 }
 
-.user-menu_username {
+/*.user-menu_username {
   display: block;
   color: #ffffff;
   font-weight: 900;
   margin-left: 3rem;
+}*/
+
+.login-link-and-dropdown-list {
+  width: 200px;
+  color: #eeeeee;
+  margin-left: 54px;
+  offset-block-end: 18px;
 }
 
 .connection_icon {
@@ -218,3 +225,16 @@ body {
   color: #3d3c40;
   padding: 9px 5px 9px 8px;
 }
+
+.bot-left-filler {
+  float: left;
+  width: 220px;
+  height: 100%;
+  background: #3c3c3c;
+  padding: 7px 0 9px 8px;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
