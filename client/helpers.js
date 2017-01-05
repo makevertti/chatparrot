@@ -12,3 +12,25 @@ Template.registerHelper("timestampToTime", function (timestamp) {
     var minutes = "0" + date.getMinutes();
     return hours + ':' + minutes.substr(minutes.length-2);
 });
+
+Template.listings.helpers({
+    channels: function () {
+        return Channels.find();
+    }
+});
+
+Template.channel.helpers({
+    active: function () {
+        if (Session.get('channel') === this.name) {
+            return "active";
+        } else {
+            return "";
+        }
+    }
+});
+
+Template.header.helpers({
+    currentChannel: function () {
+        return Session.get('channel');
+    }
+});

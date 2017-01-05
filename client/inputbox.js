@@ -4,7 +4,10 @@ Template.footer.events({
         if (!inputText) return;
         if (event.which == 13) {
             event.stopPropagation();
-            Meteor.call('newMessage', { text: $('.input-box_text').val() });
+            Meteor.call('newMessage', {
+                text: $('.input-box_text').val(),
+                channel: Session.get('channel')
+            });
             $('.input-box_text').val("");
             setTimeout(scrollToBot, 50)
             return;

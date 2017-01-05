@@ -112,6 +112,7 @@ body {
 .channel {
   color: #ffffff;
   padding-left: 0.5rem;
+  cursor: pointer;
 }
 
 .unread {
@@ -164,7 +165,6 @@ body {
 .user-menu {
   z-index: 1;
   width: 220px;
-  cursor: pointer;
   background: #006602;
   height: 2.5rem;
   position: fixed;
