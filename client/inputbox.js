@@ -5,7 +5,7 @@ Template.footer.events({
         if (event.which == 13) {
             event.stopPropagation();
             Meteor.call('newMessage', {
-                text: $('.input-box_text').val(),
+                text: inputText,
                 channel: Session.get('channel')
             });
             $('.input-box_text').val("");

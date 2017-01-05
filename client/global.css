@@ -141,7 +141,7 @@ body {
   left: 0;
   width: 36px;
   height: 36px;
-  background-image: url("http://cultofthepartyparrot.com/parrots/parrot.gif");
+  background-image: url("default_profile_img.png");
   background-size: cover;
 }
 
@@ -176,17 +176,10 @@ body {
   width: 32px;
   height: 32px;
   margin-left: 6px;
-  margin-top: 2px;
-  background-image: url("http://cultofthepartyparrot.com/parrots/parrot.gif");
+  margin-top: 4px;
+  background-image: url("default_profile_img.png");
   background-size: cover;
 }
-
-/*.user-menu_username {
-  display: block;
-  color: #ffffff;
-  font-weight: 900;
-  margin-left: 3rem;
-}*/
 
 .login-link-and-dropdown-list {
   width: 200px;
@@ -195,8 +188,19 @@ body {
   offset-block-end: 18px;
 }
 
-.connection_icon {
+.online_icon {
   background: #00d205;
+  border-radius: 12px;
+  float: left;
+  margin-right: 3px;
+  margin-left: 16px;
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.not_signed_in_icon {
+  background: #ffff00;
   border-radius: 12px;
   float: left;
   margin-right: 3px;

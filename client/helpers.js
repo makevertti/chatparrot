@@ -16,7 +16,21 @@ Template.registerHelper("timestampToTime", function (timestamp) {
 Template.listings.helpers({
     channels: function () {
         return Channels.find();
-    }
+    },
+    status: function () {
+        if (Meteor.user()) {
+            return "Online";
+        } else {
+            return "Not signed in"
+        }
+    },
+    connection_icon: function () {
+        if (Meteor.user()) {
+            return "online_icon";
+        } else {
+            return "not_signed_in_icon"
+        }
+    },
 });
 
 Template.channel.helpers({
