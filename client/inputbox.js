@@ -9,7 +9,7 @@ Template.footer.events({
                 channel: Session.get('channel')
             });
             $('.input-box_text').val("");
-            setTimeout(scrollToBot, 50)
+            setTimeout(scrollToBot, 100, true);
             return;
         }
     }
@@ -18,4 +18,5 @@ Template.footer.events({
 function scrollToBot() {
     var messageHistory = document.getElementById("message-history");
     messageHistory.scrollTop = messageHistory.scrollHeight;
+    prevScrollHeight = messageHistory.scrollHeight;
 }

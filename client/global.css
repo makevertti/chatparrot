@@ -125,7 +125,7 @@ body {
 
 .message {
   position: relative;
-  padding: 4px 80px 4px 40px;
+  padding: 4px 80px 8px 40px;
 }
 
 .message_profile-pic {
@@ -228,6 +228,7 @@ body {
   border: 2px solid #e0e0e0;
   color: #3d3c40;
   padding: 9px 5px 9px 8px;
+  background-color: #ffffff;
 }
 
 .new_channel_button {
