@@ -20,6 +20,8 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 
 accounts-base
 accounts-password
-accounts-ui
 session
 ovcharik:alertify
+stylus
+ian:accounts-ui-bootstrap-3
+twbs:bootstrap

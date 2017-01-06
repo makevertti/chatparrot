@@ -133,7 +133,6 @@ body {
   left: 0;
   width: 36px;
   height: 36px;
-  background-image: url("default_profile_img.png");
   background-size: cover;
 }
 
@@ -169,7 +168,6 @@ body {
   height: 32px;
   margin-left: 6px;
   margin-top: 4px;
-  background-image: url("default_profile_img.png");
   background-size: cover;
 }
 
@@ -186,6 +184,25 @@ body {
 
 .login-link-text:hover {
   color: #ffffff;
+}
+
+.dropdown-toggle {
+  color: #aaaaaa;
+  text-decoration-style: none;
+  margin-left: 16px;
+}
+
+.dropdown-toggle:hover {
+  color: #aaaaaa;
+}
+
+.dropdown-menu {
+  background-color: #3c3c3c;
+  min-width: 220px !important;
+}
+
+#login-dropdown-list.dropdown {
+  margin-top: 0px;
 }
 
 .online_icon {
@@ -258,12 +275,24 @@ body {
   color: #ffffff;
 }
 
+.alertify {
+  border-style: none !important;
+}
+
+.alertify-message {
+    color: #ffffff;
+}
+
 .alertify-button {
     background-color: #9e9ea6;
     background-image: none;
     text-shadow: none;
     border: 0px;
     border-radius: 0px;
+    font-weight: 400;
+    box-shadow: none;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .alertify-button:hover {
@@ -271,8 +300,18 @@ body {
     text-shadow: none;
     border: 0px;
     border-radius: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .alertify-prompt {
   border-radius: 0px;
+}
+
+.alertify-dialog {
+  background-color: #3c3c3c;
+}
+
+.alertify-text {
+  text-align: center;
 }
