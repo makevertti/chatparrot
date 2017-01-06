@@ -8,9 +8,13 @@ Template.registerHelper("usernameFromId", function (userId) {
 
 Template.registerHelper("timestampToTime", function (timestamp) {
     var date = new Date(timestamp);
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
     var hours = date.getHours();
     var minutes = "0" + date.getMinutes();
-    return hours + ':' + minutes.substr(minutes.length-2);
+    minutes = minutes.substr(minutes.length-2);
+    return hours + ':' + minutes + ' - ' + day + '/' + month + '/' + year;
 });
 
 Template.listings.helpers({
