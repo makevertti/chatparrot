@@ -4,14 +4,14 @@
     <span class={{connection_icon}}></span>
     <span class="connection_status">{{status}}</span> {{> loginButtons}}
   </div>
-	<div class="listings">
-		<div class="listings_channels">
-			<h2 class="listings_header">Channels</h2>
-			<ul class="channel_list">
-				{{#each channels}}
-    			{{> channel name=name}}
-				{{/each}}
-			</ul>
-		</div>
-	</div>
+  <div class="listings">
+    <div class="listings_channels">
+      <h2 class="listings_header">Channels</h2>
+      <ul class="channel_list">
+        {{#each channels}}
+          {{> channel name=name}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 </template>
