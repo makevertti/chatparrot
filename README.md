@@ -2,9 +2,6 @@
 
 Simple chat service with basic functionality.
 
-## Live demo
-https://chatparrot.herokuapp.com/
-
 ![It looks like this](https://github.com/makevertti/chatparrot/blob/master/screenshot.png)
 
 ## Running
